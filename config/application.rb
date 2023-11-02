@@ -19,18 +19,18 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-config.generators do |g|
-  g.jbuilder false
-  g.javascripts false
-  g.stylesheets false
-  g.helper false
-  g.test_framework false
-end
-
 module WonderfulPostApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+
+    config.generators do |g|
+      g.jbuilder false
+      g.javascripts false
+      g.stylesheets false
+      g.helper false
+      g.test_framework false
+    end
 
     # Configuration for the application, engines, and railties goes here.
     #

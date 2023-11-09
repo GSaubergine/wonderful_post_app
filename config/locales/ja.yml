@@ -1,0 +1,14 @@
+ja:
+  activerecord:
+    models:
+      article: 記事
+
+    attributes:
+      article:
+        title: タイトル
+        content: 本文
+  views:
+    articles:
+      index:
+        show: 詳細
+        edit: 編集

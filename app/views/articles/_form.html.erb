@@ -11,7 +11,23 @@
     </div>
   <% end %>
 
+  <div class="mb-3">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+
   <div class="field">
+    <%= form.label :content, class: "form-label" %>
+    <%= form.text_area :content, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit '保存', class: "btn btn-primary" %>
+  </div>
+
+  <%
+=begin%>
+ <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
@@ -24,4 +40,6 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+<%
+=end%>
 <% end %>

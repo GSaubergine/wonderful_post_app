@@ -8,7 +8,9 @@ ja:
         title: タイトル
         content: 本文
   views:
-    articles:
-      index:
-        show: 詳細
-        edit: 編集
+    pagination:
+      first: '最初'
+      last: '最後'
+      previous: '前'
+      next: '次'
+      truncate: '...'
